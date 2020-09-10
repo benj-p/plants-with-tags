@@ -14,7 +14,8 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.card-remove-link {
+.card-remove-link,
+.fa-plus-circle {
   font-size: 16px;
   color: white;
   border-radius: 50%;
@@ -32,6 +33,13 @@
     text-decoration: none;
     opacity: 1;
   }
+}
+
+.fa-plus-circle {
+  top: unset;
+  bottom: 4px;
+  opacity: 0.8;
+  font-weight: unset;
 }
 
 .cards {

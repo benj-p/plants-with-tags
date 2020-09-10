@@ -3,5 +3,11 @@ Rails.application.routes.draw do
     resources :plants, only: [:create]
   end
 
+  resources :plants, only: [] do
+    resources :plant_tags, only: [:new, :create]
+  end
+
+  resources :plant_tags, only: [:destroy]
+
   resources :plants, only: :destroy
 end
